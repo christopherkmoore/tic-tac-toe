@@ -31,19 +31,14 @@ class EmojiValidator {
     */
 
     
-    func convertEmoji(forString: String) -> Character {
-        for char in forString.unicodeScalars {
-            if char.isASCII && convertsTextToEmoji {
-                let min = 128513
-                let max = 128590
-                let difference = max - min
-                let random = arc4random_uniform(UInt32(difference)) + 128513
-                let newScalar = UnicodeScalar(random)
-                let character: Character = Character(newScalar!)
-                print(character)
-                return character
-            }
-        }
-        return Character("")
+    func convertEmoji() -> Character {
+        let min = 128513
+        let max = 128590
+        let difference = max - min
+        let random = arc4random_uniform(UInt32(difference)) + 128513
+        let newScalar = UnicodeScalar(random)
+        let character: Character = Character(newScalar!)
+        print(character)
+        return character
     }
 }

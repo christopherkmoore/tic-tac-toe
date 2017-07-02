@@ -25,7 +25,6 @@ class SetEmojiViewController: UIViewController {
         super.viewDidLoad()
         
         setEmojiTextField.delegate = self
-        emojiConverter.convertEmoji(forString: "hello world")
     }
     
     
@@ -34,8 +33,21 @@ class SetEmojiViewController: UIViewController {
 
 extension SetEmojiViewController: UITextFieldDelegate {
     
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        return false
+    // this is wrong because even if they select an emoji it's going to replace it.
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (textField.text?.characters.count)! > 1 || textField.text == nil {
+            textField.text = String(emojiConverter.convertEmoji())
+        }
+        resignFirstResponder()
+        return true
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        // needs to be if (check value to see if it's an emoji) else -> this
+        resignFirstResponder()
+    }
+    
+
     
 }
