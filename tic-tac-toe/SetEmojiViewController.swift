@@ -25,6 +25,9 @@ class SetEmojiViewController: UIViewController {
             }
        } else {
         // create segue since we've picked an emoji
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "GridViewController") as! GridViewController
+        controller.emojiToUseForPlayer = setEmojiTextField.text!
+        present(controller, animated: true)
         }
     
     }

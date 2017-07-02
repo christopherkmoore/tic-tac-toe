@@ -41,7 +41,7 @@
                                     <action selector="setEmoji:" destination="NSh-0y-22y" eventType="touchUpInside" id="t7x-of-vHv"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPS-T7-1Lx">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="asdf" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPS-T7-1Lx">
                                 <rect key="frame" x="94" y="208" width="187" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="-578.39999999999998" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--Grid View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tic_tac_toe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GridViewController" id="BYZ-38-t0r" customClass="GridViewController" customModule="tic_tac_toe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -85,16 +85,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-ju-W5X" customClass="Grid" customModule="tic_tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="16" y="50" width="343" height="617"/>
+                                <rect key="frame" x="16" y="101" width="343" height="566"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wwI-ju-W5X" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AyP-62-3iW"/>
-                            <constraint firstItem="wwI-ju-W5X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="KwX-Wa-NEe"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wwI-ju-W5X" secondAttribute="bottom" id="dVa-E7-KpC"/>
-                            <constraint firstItem="wwI-ju-W5X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="h7P-Nj-Wzy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wwI-ju-W5X" secondAttribute="trailing" id="LIB-Q1-Ggf"/>
+                            <constraint firstItem="wwI-ju-W5X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="bHo-rP-Prj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wwI-ju-W5X" secondAttribute="leading" id="gDb-ke-Mct"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wwI-ju-W5X" secondAttribute="bottom" id="oTL-66-WAM"/>
                         </constraints>
                     </view>
                     <connections>

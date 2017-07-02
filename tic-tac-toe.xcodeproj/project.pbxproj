@@ -10,7 +10,7 @@
 		0346167B1F08B4DA00ECC00A /* EmojiValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346167A1F08B4DA00ECC00A /* EmojiValidator.swift */; };
 		0346167D1F08D51D00ECC00A /* shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346167C1F08D51D00ECC00A /* shake.swift */; };
 		03D936B61F089D3000CD184A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D936B51F089D3000CD184A /* AppDelegate.swift */; };
-		03D936B81F089D3000CD184A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D936B71F089D3000CD184A /* ViewController.swift */; };
+		03D936B81F089D3000CD184A /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D936B71F089D3000CD184A /* GridViewController.swift */; };
 		03D936BB1F089D3000CD184A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D936B91F089D3000CD184A /* Main.storyboard */; };
 		03D936BD1F089D3000CD184A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D936BC1F089D3000CD184A /* Assets.xcassets */; };
 		03D936C01F089D3000CD184A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D936BE1F089D3000CD184A /* LaunchScreen.storyboard */; };
@@ -42,7 +42,7 @@
 		0346167C1F08D51D00ECC00A /* shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shake.swift; sourceTree = "<group>"; };
 		03D936B21F089D3000CD184A /* tic-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tic-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D936B51F089D3000CD184A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03D936B71F089D3000CD184A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03D936B71F089D3000CD184A /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		03D936BA1F089D3000CD184A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03D936BC1F089D3000CD184A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03D936BF1F089D3000CD184A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			children = (
 				034616781F08B4B400ECC00A /* Views */,
 				03D936B51F089D3000CD184A /* AppDelegate.swift */,
-				03D936B71F089D3000CD184A /* ViewController.swift */,
+				03D936B71F089D3000CD184A /* GridViewController.swift */,
 				03D936E51F08AD3500CD184A /* SetEmojiViewController.swift */,
 			);
 			name = ViewControllers;
@@ -298,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D936B81F089D3000CD184A /* ViewController.swift in Sources */,
+				03D936B81F089D3000CD184A /* GridViewController.swift in Sources */,
 				03D936B61F089D3000CD184A /* AppDelegate.swift in Sources */,
 				0346167D1F08D51D00ECC00A /* shake.swift in Sources */,
 				03D936E41F089EEF00CD184A /* Grid.swift in Sources */,

@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GridViewController: UIViewController {
 
     @IBOutlet weak var grid: UIView!
+    
+    var emojiToUseForPlayer: String!
     
     
     override func viewDidLoad() {
@@ -18,11 +20,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         decideFirstPlayer()
         let grid = Grid()
+        setupView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setupView() {
+        var label = UILabel(frame: CGRect(origin: CGPoint(x: view.bounds.width / 2, y: 40 ), size: CGSize(width: 160, height: 40)))
+        label.text = "Player is \(emojiToUseForPlayer!)"
+        view.addSubview(label)
     }
     
     func decideFirstPlayer() {
