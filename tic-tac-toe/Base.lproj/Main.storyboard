@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NSh-0y-22y">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,68 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Set Emoji View Controller-->
+        <scene sceneID="jkY-JF-vmq">
+            <objects>
+                <viewController id="NSh-0y-22y" customClass="SetEmojiViewController" customModule="tic_tac_toe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R4w-SQ-8av"/>
+                        <viewControllerLayoutGuide type="bottom" id="uUW-hx-U5i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Np0-Az-dhV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Set Emoji" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKe-B8-Idp">
+                                <rect key="frame" x="105" y="95" width="165" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnm-cI-NzC">
+                                <rect key="frame" x="112" y="321" width="151" height="60"/>
+                                <color key="backgroundColor" red="0.86900906735751293" green="0.86900906735751293" blue="0.86900906735751293" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9RQ-Y2-9cu"/>
+                                    <constraint firstAttribute="width" constant="151" id="Awu-Vo-SXE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="🤑😎🤤"/>
+                                <connections>
+                                    <action selector="setEmoji:" destination="NSh-0y-22y" eventType="touchUpInside" id="t7x-of-vHv"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPS-T7-1Lx">
+                                <rect key="frame" x="94" y="208" width="187" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="EKe-B8-Idp" secondAttribute="trailing" constant="89" id="5Um-dc-8jd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cnm-cI-NzC" secondAttribute="trailing" constant="96" id="DHR-g6-e9Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MPS-T7-1Lx" secondAttribute="trailing" constant="78" id="KrD-ET-w1R"/>
+                            <constraint firstItem="EKe-B8-Idp" firstAttribute="leading" secondItem="Np0-Az-dhV" secondAttribute="leadingMargin" constant="89" id="aJy-aw-K5G"/>
+                            <constraint firstItem="MPS-T7-1Lx" firstAttribute="top" secondItem="EKe-B8-Idp" secondAttribute="bottom" constant="51" id="asJ-n0-dD7"/>
+                            <constraint firstItem="MPS-T7-1Lx" firstAttribute="leading" secondItem="Np0-Az-dhV" secondAttribute="leadingMargin" constant="78" id="gv1-u0-8Fa"/>
+                            <constraint firstItem="EKe-B8-Idp" firstAttribute="top" secondItem="R4w-SQ-8av" secondAttribute="bottom" constant="75" id="jLZ-co-mNK"/>
+                            <constraint firstItem="Cnm-cI-NzC" firstAttribute="top" secondItem="MPS-T7-1Lx" secondAttribute="bottom" constant="109" id="kaq-yV-OJK"/>
+                            <constraint firstItem="Cnm-cI-NzC" firstAttribute="leading" secondItem="Np0-Az-dhV" secondAttribute="leadingMargin" constant="96" id="zLF-n6-ceN"/>
+                            <constraint firstItem="uUW-hx-U5i" firstAttribute="top" secondItem="Cnm-cI-NzC" secondAttribute="bottom" constant="286" id="zb5-UE-9n3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="setEmojiButton" destination="Cnm-cI-NzC" id="qSe-62-fTE"/>
+                        <outlet property="setEmojiLabel" destination="EKe-B8-Idp" id="wB1-10-2of"/>
+                        <outlet property="setEmojiTextField" destination="MPS-T7-1Lx" id="rEU-cc-8rd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKQ-xv-ToJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578.39999999999998" y="118.29085457271366"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>

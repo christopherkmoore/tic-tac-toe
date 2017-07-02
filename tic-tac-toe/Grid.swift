@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable class Grid: UIView {
+class Grid: UIView {
     
     override func draw(_ rect: CGRect) {
         let y1 = UIBezierPath(rect: CGRect(x: bounds.width / 20 * 6, y: bounds.height / 10 * 2, width: 0, height: 0))
