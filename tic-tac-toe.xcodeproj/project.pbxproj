@@ -87,8 +87,8 @@
 			children = (
 				034616781F08B4B400ECC00A /* Views */,
 				03D936B51F089D3000CD184A /* AppDelegate.swift */,
-				03D936B71F089D3000CD184A /* GridViewController.swift */,
 				03D936E51F08AD3500CD184A /* SetEmojiViewController.swift */,
+				03D936B71F089D3000CD184A /* GridViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";

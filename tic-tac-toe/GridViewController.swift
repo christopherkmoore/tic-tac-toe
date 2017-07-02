@@ -13,6 +13,7 @@ class GridViewController: UIViewController {
     @IBOutlet weak var grid: UIView!
     
     var emojiToUseForPlayer: String!
+    var emojiToUseForCP: String!
     
     
     override func viewDidLoad() {
@@ -29,8 +30,12 @@ class GridViewController: UIViewController {
     }
     
     func setupView() {
-        var label = UILabel(frame: CGRect(origin: CGPoint(x: view.bounds.width / 2, y: 40 ), size: CGSize(width: 160, height: 40)))
-        label.text = "Player is \(emojiToUseForPlayer!)"
+        var label = UILabel(frame: CGRect(origin: CGPoint(x: 0, y: 40 ), size: CGSize(width: 160, height: 40)))
+        label.center.x = self.view.center.x
+        label.font = UIFont(name: "System", size: 25)
+
+        label.text = "Player: \(emojiToUseForPlayer!), CP: \(emojiToUseForCP!)"
+        label.sizeToFit()
         view.addSubview(label)
     }
     

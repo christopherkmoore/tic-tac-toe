@@ -23,16 +23,20 @@ class SetEmojiViewController: UIViewController {
                 self.setEmojiTextField.shake()
                 
             }
+        } else if (setEmojiTextField.text?.characters.count)! > 1 || setEmojiTextField.text == nil {
+            setEmojiTextField.text = emojiConverter.convertEmoji()
        } else {
-        // create segue since we've picked an emoji
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "GridViewController") as! GridViewController
-        controller.emojiToUseForPlayer = setEmojiTextField.text!
-        present(controller, animated: true)
+
+            // create segue since we've picked an emoji
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "GridViewController") as! GridViewController
+            controller.emojiToUseForPlayer = setEmojiTextField.text!
+            controller.emojiToUseForCP = emojiConverter.convertEmoji()
+            present(controller, animated: true)
         }
     
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad() {   
         super.viewDidLoad()
         
         setEmojiTextField.delegate = self
@@ -48,7 +52,7 @@ extension SetEmojiViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if (textField.text?.characters.count)! > 1 || textField.text == nil {
-            textField.text = String(emojiConverter.convertEmoji())
+            textField.text = emojiConverter.convertEmoji()
         }
         textField.resignFirstResponder()
         return true
