@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0346167B1F08B4DA00ECC00A /* EmojiValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346167A1F08B4DA00ECC00A /* EmojiValidator.swift */; };
+		0346167D1F08D51D00ECC00A /* shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346167C1F08D51D00ECC00A /* shake.swift */; };
 		03D936B61F089D3000CD184A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D936B51F089D3000CD184A /* AppDelegate.swift */; };
 		03D936B81F089D3000CD184A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D936B71F089D3000CD184A /* ViewController.swift */; };
 		03D936BB1F089D3000CD184A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D936B91F089D3000CD184A /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0346167A1F08B4DA00ECC00A /* EmojiValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiValidator.swift; sourceTree = "<group>"; };
+		0346167C1F08D51D00ECC00A /* shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shake.swift; sourceTree = "<group>"; };
 		03D936B21F089D3000CD184A /* tic-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tic-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D936B51F089D3000CD184A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D936B71F089D3000CD184A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				0346167A1F08B4DA00ECC00A /* EmojiValidator.swift */,
+				0346167C1F08D51D00ECC00A /* shake.swift */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			files = (
 				03D936B81F089D3000CD184A /* ViewController.swift in Sources */,
 				03D936B61F089D3000CD184A /* AppDelegate.swift in Sources */,
+				0346167D1F08D51D00ECC00A /* shake.swift in Sources */,
 				03D936E41F089EEF00CD184A /* Grid.swift in Sources */,
 				03D936E61F08AD3500CD184A /* SetEmojiViewController.swift in Sources */,
 				0346167B1F08B4DA00ECC00A /* EmojiValidator.swift in Sources */,

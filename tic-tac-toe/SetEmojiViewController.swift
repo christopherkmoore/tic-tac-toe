@@ -18,6 +18,14 @@ class SetEmojiViewController: UIViewController {
     
     @IBAction func setEmoji(_ sender: UIButton) {
     
+       if setEmojiTextField.text?.characters.count == 0 {
+            UIView.animate(withDuration: 0.5) {
+                self.setEmojiTextField.shake()
+                
+            }
+       } else {
+        // create segue since we've picked an emoji
+        }
     
     }
     
@@ -44,3 +52,4 @@ extension SetEmojiViewController: UITextFieldDelegate {
     }
     
 }
+
