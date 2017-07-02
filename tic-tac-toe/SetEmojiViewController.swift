@@ -39,15 +39,8 @@ extension SetEmojiViewController: UITextFieldDelegate {
         if (textField.text?.characters.count)! > 1 || textField.text == nil {
             textField.text = String(emojiConverter.convertEmoji())
         }
-        resignFirstResponder()
+        textField.resignFirstResponder()
         return true
     }
-    
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
-        // needs to be if (check value to see if it's an emoji) else -> this
-        resignFirstResponder()
-    }
-    
-
     
 }
