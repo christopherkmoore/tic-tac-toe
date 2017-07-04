@@ -14,17 +14,16 @@ class GridLogic {
     static var sharedInstance = GridLogic()
     
     func findBoxForTouch(_ touch: UITouch, forView view: UIView) {
-        let gridYmarginTop      = view.frame.height / 5
-        let gridYmarginBottom   = view.frame.height / 5
-        let gridXmarginLeading  = view.frame.width / 10
-        let gridXmarginTrailing = view.frame.width / 10
         
-        let totalX = view.frame.width - gridXmarginLeading - gridXmarginTrailing
-        let totalY = view.frame.height - gridYmarginTop - gridYmarginBottom
+        // a bit tight near the edges, but works.
+        
+        let totalX = view.frame.width
+        let totalY = view.frame.height
         
         let touchX = touch.location(in: view).x
         let touchY = touch.location(in: view).y
         
+        print("my name is \(view)")
         if touchX < totalX / 3 {
             print("x1 \n")
         }
