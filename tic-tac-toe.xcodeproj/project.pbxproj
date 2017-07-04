@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031009D71F0C023C00424912 /* GridLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031009D61F0C023C00424912 /* GridLogic.swift */; };
 		0346167B1F08B4DA00ECC00A /* EmojiValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346167A1F08B4DA00ECC00A /* EmojiValidator.swift */; };
 		0346167D1F08D51D00ECC00A /* shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346167C1F08D51D00ECC00A /* shake.swift */; };
 		03D936B61F089D3000CD184A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D936B51F089D3000CD184A /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		031009D61F0C023C00424912 /* GridLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLogic.swift; sourceTree = "<group>"; };
 		0346167A1F08B4DA00ECC00A /* EmojiValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiValidator.swift; sourceTree = "<group>"; };
 		0346167C1F08D51D00ECC00A /* shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shake.swift; sourceTree = "<group>"; };
 		03D936B21F089D3000CD184A /* tic-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tic-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 			children = (
 				0346167A1F08B4DA00ECC00A /* EmojiValidator.swift */,
 				0346167C1F08D51D00ECC00A /* shake.swift */,
+				031009D61F0C023C00424912 /* GridLogic.swift */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				03D936B81F089D3000CD184A /* GridViewController.swift in Sources */,
 				03D936B61F089D3000CD184A /* AppDelegate.swift in Sources */,
+				031009D71F0C023C00424912 /* GridLogic.swift in Sources */,
 				0346167D1F08D51D00ECC00A /* shake.swift in Sources */,
 				03D936E41F089EEF00CD184A /* Grid.swift in Sources */,
 				03D936E61F08AD3500CD184A /* SetEmojiViewController.swift in Sources */,

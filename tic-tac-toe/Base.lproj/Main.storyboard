@@ -88,20 +88,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-ju-W5X" customClass="Grid" customModule="tic_tac_toe" customModuleProvider="target">
-                                <rect key="frame" x="16" y="101" width="343" height="566"/>
+                                <rect key="frame" x="16" y="100" width="343" height="567"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="wwI-ju-W5X" secondAttribute="trailing" id="LIB-Q1-Ggf"/>
-                            <constraint firstItem="wwI-ju-W5X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="bHo-rP-Prj"/>
+                            <constraint firstItem="wwI-ju-W5X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="bHo-rP-Prj"/>
                             <constraint firstAttribute="leadingMargin" secondItem="wwI-ju-W5X" secondAttribute="leading" id="gDb-ke-Mct"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wwI-ju-W5X" secondAttribute="bottom" id="oTL-66-WAM"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="grid" destination="wwI-ju-W5X" id="mpR-wf-uLX"/>
+                        <outlet property="grid" destination="wwI-ju-W5X" id="ydO-GL-Lg7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

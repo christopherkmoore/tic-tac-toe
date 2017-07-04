@@ -35,10 +35,5 @@ class Grid: UIView {
         x2.lineWidth = 5
         x2.stroke()
         
-        
-//        rect.UIColor.setFill(.black)
-        
     }
-    
-    
 }
