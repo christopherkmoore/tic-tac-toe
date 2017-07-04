@@ -16,17 +16,8 @@ class GridViewController: UIViewController {
     var emojiToUseForPlayer: String!
     var emojiToUseForCP: String!
     
-    var touchPoint1: CGRect?
-    var touchPoint2: CGRect?
-    var touchPoint3: CGRect?
+    var isPlayerTurn: Bool! = true
     
-    var touchPoint4: CGRect?
-    var touchPoint5: CGRect?
-    var touchPoint6: CGRect?
-    
-    var touchPoint7: CGRect?
-    var touchPoint8: CGRect?
-    var touchPoint9: CGRect?
     
     // MARK: - Lifecycle
     
@@ -71,9 +62,23 @@ class GridViewController: UIViewController {
 
     }
     
+    func scaleEmojiSize() {
+        
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
-        GridLogic.sharedInstance.findBoxForTouch(touch, forView: grid)
+        let touchMatrix = GridLogic.sharedInstance.findBoxForTouch(touch, forView: grid)
+        let touchMatrixCGPoint = GridLogic.sharedInstance.plotEmoji(xy: touchMatrix)
+        
+        if isPlayerTurn {
+            var emojiTextLabel = UILabel(frame: CGRect(x: touchMatrixCGPoint.x, y: touchMatrixCGPoint.y, width: 75, height: 75))
+            emojiTextLabel.text = emojiToUseForPlayer
+            emojiTextLabel.textAlignment = .center
+            emojiTextLabel.font = UIFont(name: "System", size: 30)
+            emojiTextLabel.center = touchMatrixCGPoint
+            grid.addSubview(emojiTextLabel)
+        }
         print(view.frame)
         print(grid.frame)
     }
